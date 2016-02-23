@@ -1,0 +1,7 @@
+name             'tomcat'
+maintainer       'okram999'
+maintainer_email 'nirish.okram@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures tomcat'
+long_description 'Installs/Configures tomcat'
+version          '0.1.0'
