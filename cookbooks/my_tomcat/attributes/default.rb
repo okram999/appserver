@@ -1,0 +1,10 @@
+default['base_dir'] = '/opt/mount1'
+default['tomcat']['version'] = '7.0.54'
+default['tomcat']['log_dir'] = ::File.join(node[:base_dir],"tomcat-#{node[:tomcat][:version]}",'logs')
+default['tomcat']['wp_config_home'] = ::File.join(node[:base_dir],'wpconfig')
+default['tomcat']['minimum_memory'] = 1024
+default['tomcat']['maximum_memory'] = 6144
+default['tomcat']['certs_path'] = '/opt/mount1/certs'
+default['tomcat']['app_log_dir'] = '/opt/mount1/tomcat/logs/application'
+default['tomcat']['application'] = 'myapp'
+default['java']['java_home'] = '/opt/mount1/java'

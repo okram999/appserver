@@ -1,0 +1,7 @@
+name             'my_nginx'
+maintainer       'okram999'
+maintainer_email 'nirish.okram@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures nginx'
+long_description 'Installs/Configures nginx'
+version          '0.1.0'

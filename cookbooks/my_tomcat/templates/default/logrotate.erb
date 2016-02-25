@@ -1,0 +1,16 @@
+<%= @log_file %> {
+<%= @log_occurance || "weekly" %>
+rotate <%= @files_to_keep || "10" %>
+<%= @rotate_method || "copytruncate" %>
+<%= @owner_mode %>
+delaycompress
+compress
+notifempty
+missingok
+<% if @post_rotate -%>
+  sharedscripts
+  postrotate
+  <%= @post_rotate %>
+  endscript
+<% end -%>
+}
